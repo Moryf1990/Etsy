@@ -1,14 +1,16 @@
 var handleData = function(data) {
-	var container = $('#userData');
+	var container = $('#user-repos');
   data.results.forEach(function(val, i, arr) {
-    var newEl = $('<div></div>', {'data-id': val.listing_id}).html(val.title);
-    console.log(newEl);
-    container.append(newEl);
+    var newTitle = $('<div></div>', {'title': val.listing_id}).html(val.title);
+    var newMaker = $('<div></div>', {'maker': val.listing_id}).html(val.Shop.shop_name);
+    var newPrice = $('<div></div> <br>', {'price': val.listing_id}).html(val.Shop.shop_price);
+    console.log(newTitle);
+    container.append(newTitle);
+    console.log(newPrice);
+    container.append(newPrice);
+    console.log(newMaker);
+    container.append(newMaker);
   });
-//   $('div').on('click', function(e) {
-//     console.log($(e.target).data());
-//   });
-//  console.log(data.url);
 };
 
 var settings = {
