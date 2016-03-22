@@ -3,13 +3,16 @@ var handleData = function(data) {
   data.results.forEach(function(val, i, arr) {
     var newTitle = $('<div></div>', {'title': val.listing_id}).html(val.title);
     var newMaker = $('<div></div>', {'maker': val.listing_id}).html(val.Shop.shop_name);
-    var newPrice = $('<div></div> <br>', {'price': val.listing_id}).html(val.Shop.shop_price);
+    var newPrice = $('<div></div>', {'price': val.listing_id}).html(val.Shop.shop_price);
+    var newImage = $('<img/>', {'src': val.Images[0].url_75x75});
     console.log(newTitle);
     container.append(newTitle);
     console.log(newPrice);
     container.append(newPrice);
     console.log(newMaker);
     container.append(newMaker);
+    console.log(newImage);
+    container.append(newImage);
   });
 };
 
