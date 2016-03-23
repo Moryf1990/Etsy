@@ -1,3 +1,27 @@
+header {
+  height: 4em;
+  margin-left: 2em;
+  color: orange;
+  font-size: 2em; }
 
+.input {
+  margin-left: 2em;
+  font-size: 0.75em;
+  width: 15em; }
+
+section {
+  background: #F5F5F2;
+  height: 100%; }
+
+button {
+  margin-left: -0.5em;
+  height: 1.5em;
+  padding-bottom: 0em;
+  padding-top: 0em;
+  border-radius: 0.25em;
+  border: none;
+  background: #34A8C4;
+  color: #fff;
+  font-size: 0.75em; }
 
 /*# sourceMappingURL=main.css.map */

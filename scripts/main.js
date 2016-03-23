@@ -5,13 +5,9 @@ var handleData = function(data) {
     var newMaker = $('<div></div>', {'maker': val.listing_id}).html(val.Shop.shop_name);
     var newPrice = $('<div></div>', {'price': val.listing_id}).html(val.Shop.shop_price);
     var newImage = $('<img/>', {'src': val.Images[0].url_75x75});
-    console.log(newTitle);
     container.append(newTitle);
-    console.log(newPrice);
     container.append(newPrice);
-    console.log(newMaker);
     container.append(newMaker);
-    console.log(newImage);
     container.append(newImage);
   });
 };
